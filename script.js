@@ -75,3 +75,16 @@ $(document).ready(function(){
 function redirectToURL() {
     window.location.href = "https://drive.google.com/file/d/1vWkDjWeujNfgbS_j1IMw2zZQKH2rDP-a/view?usp=sharing";
 }
+
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+GitHubCalendar(".calendar", "umesh8878");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "umesh8878", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "umesh8878", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
