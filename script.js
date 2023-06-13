@@ -72,10 +72,14 @@ $(document).ready(function(){
     });
 });
 
-function redirectToURL() {
+function redirectToURL1() {
     window.location.href = "https://drive.google.com/file/d/1vWkDjWeujNfgbS_j1IMw2zZQKH2rDP-a/view?usp=sharing";
 }
 
 GitHubCalendar(".react-activity-calendar", "umesh8878");
     // or enable responsive functionality
 GitHubCalendar(".react-activity-calendar", "umesh8878", { responsive: true });
+
+function redirectToURL() {
+    window.location.href = "./images/Umesh-Gupta-Resume.pdf";
+}
